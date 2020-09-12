@@ -2,7 +2,7 @@ void setup()
 {
   size(500, 500);
  clouds();
-frameRate(3);
+frameRate(8);
 }
 
 
@@ -65,50 +65,50 @@ void draw()
     rect(0,100,10000,10000);
     clouds();
     stroke(255,255,0);
-    line(a,150,a+40,100);
-    line(a+40,200,a,150);
-    line(a,250,a+40,200);
-    line(a+40,300,a,250);
-    line(a,350,a+40,300);
-    line(a+40,400,a,350);
-    line(a,450,a+40,400);
-    line(a+40,500,a,450);
-    line(a,150,a+40,100);
-    line(a+40,200,a,150);
-    line(a,250,a+40,200);
-    line(a+40,300,a,250);
-    line(a,350,a+40,300);
-    line(a+40,400,a,350);
-    line(a,450,a+40,400);
-    line(a+40,500,a,450); 
-  
-    line(b,150,b+40,100);
-    line(b+40,200,b,150);
-    line(b,250,b+40,200);
-    line(b+40,300,b,250);
-    line(b,350,b+40,300);
-    line(b+40,400,b,350);
-    line(b,450,b+40,400);
-    line(b+40,500,b,450); 
-  
-    line(c,150,c+40,100);
-    line(c+40,200,c,150);
-    line(c,250,c+40,200);
-    line(c+40,300,c,250);
-    line(c,350,c+40,300);
-    line(c+40,400,c,350);
-    line(c,450,c+40,400);
-    line(c+40,500,c,450); 
-  
-  
-    line(d,150,d+40,100);
-    line(d+40,200,d,150);
-    line(d,250,d+40,200);
-    line(d+40,300,d,250);
-    line(d,350,d+40,300);
-    line(d+40,400,d,350);
-    line(d,450,d+40,400);
-    line(d+40,500,d,450); 
+    int x1 = (int)Math.floor(Math.random() * 100);
+    int y1 = (int)Math.floor(Math.random() * 100);
+    line(a,150+y1,a+x1,100);
+    line(a+x1,200+y1,a,150+y1);
+    //x1 = (int)Math.floor(Math.random() * 40);
+    //y1 = (int)Math.floor(Math.random() * 100);
+    line(a,250+y1,a+x1,200+y1);
+    line(a+x1,300+y1,a,250+y1);
+    //x1 = (int)Math.floor(Math.random() * 40);
+    //y1 = (int)Math.floor(Math.random() * 100);
+    line(a,350+y1,a+x1,300+y1);
+    line(a+x1,400,a,350+y1);
+    //line(a,450,a+40,400);
+    //line(a+40,500,a,450);
+    //line(a,150,a+40,100);
+    //line(a+40,200,a,150);
+    //line(a,250,a+40,200);
+    //line(a+40,300,a,250);
+    //line(a,350,a+40,300);
+    //line(a+40,400,a,350);
+    //line(a,450,a+40,400);
+    //line(a+40,500,a,450); 
+    x1 = (int)Math.floor(Math.random() * 100);
+    y1 = (int)Math.floor(Math.random() * 100);
+    
+    line(b,150+y1,b+x1,100);
+    line(b+x1,200+y1,b,150+y1);
+    int x2 = (int)Math.floor(Math.random() * 100);
+    int y2 = (int)Math.floor(Math.random() * 100);
+    line(b,250+y2,b+x1,200+y1);
+    line(b+x2,300+y2,b,250+y2);
+    //x1 = (int)Math.floor(Math.random() * 40);
+    //y1 = (int)Math.floor(Math.random() * 100);
+    line(b,350+y1,b+x2,300+y2);
+    line(b+x2,400,b,350+y1);
+
+    //line(d,150,d+40,100);
+    //line(d+40,200,d,150);
+    //line(d,250,d+40,200);
+    //line(d+40,300,d,250);
+    //line(d,350,d+40,300);
+    //line(d+40,400,d,350);
+    //line(d,450,d+40,400);
+    //line(d+40,500,d,450); 
   
     
 }
